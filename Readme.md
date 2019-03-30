@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Коршун](https://up.htmlacademy.ru/adaptive/16/user/657157).
-* Наставник: Алексей Новиков (https://htmlacademy.ru/profile/id42641)`.
+* Наставник: [Алексей Новиков] (https://htmlacademy.ru/profile/id42641).
 
 ---
 
