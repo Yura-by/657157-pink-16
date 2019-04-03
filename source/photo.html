@@ -7,37 +7,38 @@
   <body>
 
     <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Пинк">
+      </a>
+      <button class="page-header__toggle" type="button">Скрыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
       <h1 class="pade-header__title">Фотографии пользователей</h1>
-      <div class="main-nav__wrapper">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
     <main class="page-main-photo">
       <section class="photos">
         <h2 class="visually-hidden">Фотографии с подписями</h2>
-        <b class="photos__lid photos__lid--top">
+        <b class="photos__lid">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </b>
         <div class="photos__wrapper-figures figure-list">
           <figure class="figure-list__item figure-item figure-list__item--best">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Опасный спуск">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Опасный спуск">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -54,7 +55,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Фотоссессия авто">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Фотоссессия авто">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -71,7 +72,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Барабанная установка">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Барабанная установка">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -88,7 +89,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Прозрачная крыша">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Прозрачная крыша">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -105,7 +106,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Море арбузов">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Море арбузов">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -122,7 +123,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Солнце и горы">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Солнце и горы">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -139,7 +140,7 @@
             </figcaption>
           </figure>
           <figure class="figure-list__item figure-item">
-            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Полет над облаками">
+            <img class="figure-item__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Полет над облаками">
             <figcaption class="figure-item__legend">
               <blockquote class="figure-item__description">
                 <cite class="figure-item__author">
@@ -156,47 +157,47 @@
             </figcaption>
           </figure>
         </div>
-        <b class="photos__lid photos__lid--bottom">
-          Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!
-        </b>
       </section>
       <section class="edit-photo">
         <h2 class="visually-hidden">Редактор фото</h2>
-          <img class="edit-photo__image" src="http://placehold.it/150x100" width="150" heigt="100" alt="Зимняя дорога">
-          <ul class="edit-photo__list editor">
-            <li class="editor__item editor__item--current">
-              <button class="editor__toggle editor__toggle--crop" type="button">Кадрирование</button>
-              <div class="editor__config config">
-                <div class="config__scale"></div>
-                <button class="config__button" type="button">Ползунок</button>
-              </div>
-            </li>
-            <li class="editor__item">
-              <button class="editor__toggle editor__toggle--fill" type="button">Заливка</button>
-              <div class="editor__config config">
-                <div class="config__scale"></div>
-                <button class="config__button" type="button">Ползунок</button>
-              </div>
-            </li>
-            <li class="editor__item">
-              <button class="editor__toggle editor__toggle--contrast" type="button">Контраст</button>
-              <div class="editor__config config">
-                <div class="config__scale"></div>
-                <button class="config__button" type="button">Ползунок</button>
-              </div>
-            </li>
-          </ul>
-          <p class="edit-photo__send send">
-            <a class="send__link button send__link--post-it" href="#">Запостить</a>
-            <a class="send__link button send__link--post-cancel" href="#">Отмена</a>
-          </p>
+        <b class="edit-photo__lid">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </b>
+        <img class="edit-photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Зимняя дорога">
+        <ul class="edit-photo__list editor">
+          <li class="editor__item editor__item--current">
+            <button class="editor__toggle editor__toggle--crop" type="button">Кадрирование</button>
+            <div class="editor__config config">
+              <div class="config__scale"></div>
+              <button class="config__button" type="button">Ползунок</button>
+            </div>
+          </li>
+          <li class="editor__item">
+            <button class="editor__toggle editor__toggle--fill" type="button">Заливка</button>
+            <div class="editor__config config">
+              <div class="config__scale"></div>
+              <button class="config__button" type="button">Ползунок</button>
+            </div>
+          </li>
+          <li class="editor__item">
+            <button class="editor__toggle editor__toggle--contrast" type="button">Контраст</button>
+            <div class="editor__config config">
+              <div class="config__scale"></div>
+              <button class="config__button" type="button">Ползунок</button>
+            </div>
+          </li>
+        </ul>
+        <p class="edit-photo__send send">
+          <a class="send__link button send__link--post-it" href="#">Запостить</a>
+          <a class="send__link button send__link--post-cancel" href="#">Отмена</a>
+        </p>
       </section>
     </main>
 
-  <footer class="page-footer">
+    <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" heigt="100" alt="Мобильное приложение Пинк">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мобильное приложение Пинк">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -210,11 +211,11 @@
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
-        <span class="copyright__text">
+        <b class="copyright__text">
           Разработано
-        </span>
+        </b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/150x100" width="150" heigt="100" alt="HTML Academy">
+          <img class="copyright__image" src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
         </a>
       </p>
     </footer>
