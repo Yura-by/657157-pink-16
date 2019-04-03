@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс с Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <img class="page-header__pink-photo" src="http://placehold.it/150x100" width="150" heigt="100" alt="Так выглядит Мир через Пинк">
+    </header>
+
+    <main class="page-main-contest">
+      <section class="contest">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+        <p class="contest__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <form class="contest__form form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__name name">
+            <legend class="visually-hidden">Поля для ввода ФИО</legend>
+            <p class="name__item name-value">
+              <label class="name-value__label" for="surname">Фамилия:</label>
+              <input class="name-value__input" name="surname" id="surname" type="text" placeholder="Укажите фамилию *" required>
+            </p>
+            <p class="name__item name-value">
+              <label class="personal-name__label" for="personal-name">Имя:</label>
+              <input class="personal-name__input" name="personal-name" id="personal-name" type="text" placeholder="Введите ваше имя *" required>
+            </p>
+            <p class="name__item name-value">
+              <label class="name-value__label" for="patronymic">Отчество:</label>
+              <input class="name-value__input" name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже *" required>
+            </p>
+          </fieldset>
+          <fieldset class="form__progress progress">
+            <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="selfi" id="selfi" type="checkbox" checked>
+              <label class="progress-value__label" for="selfi">Сделал селфи с акулой</label>
+            </p>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="burned" id="burned" type="checkbox" checked>
+              <label class="progress-value__label" for="burned">Обгорел на пляже</label>
+            </p>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="chuck-norris" id="chuck-norris" type="checkbox">
+              <label class="progress-value__label" for="chuck-norris">Видел Чака Норриса</label>
+            </p>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="souvenirs" id="souvenirs" type="checkbox">
+              <label class="progress-value__label" for="souvenirs">Накупил сувениров</label>
+            </p>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="tower" id="tower" type="checkbox" checked>
+              <label class="progress-value__label" for="tower">Удержал башню</label>
+            </p>
+            <p class="progress__item progress-value">
+              <input class="progress-value__input" name="rout" id="rout" type="checkbox">
+              <label class="progress-value__label" for="rout">Разгромил отель</label>
+            </p>
+          </fieldset>
+          <fieldset class="form__user-contacts user-contacts">
+            <legend class="visually-hidden">Ваши контактые данные</legend>
+            <p class="user-contacts__item user-contacts-value">
+              <label class="user-contacts-value__label" for="user-phone">Номер телефона:</label>
+              <input class="user-contacts-value__input" name="user-phone" id="user-phone" type="text" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="user-contacts__item user-contacts-value">
+              <label class="user-contacts-value__label" for="user-mail">Адрес почты:</label>
+              <input class="user-contacts-value__input" name="user-mail" id="user-mail" type="text" placeholder="Введите почту *" required>
+            </p>
+          </fieldset>
+          <fieldset class="form__version version">
+            <legend class="version__legend">С каким приложение путешествовали?</legend>
+            <p class="version__item version-value">
+              <input class="version-value__input" name="version" id="version-apple" type="radio" value="version-apple" checked>
+              <label class="version-value__label" for="version-apple">Pink для iOS</label>
+            </p>
+            <p class="version__item version-value">
+              <input class="version-value__input" name="version" id="version-android" type="radio" value="version-android">
+              <label class="version-value__label" for="version-android">Pink на Android</label>
+            </p>
+            <p class="version__item version-value">
+              <input class="version-value__input" name="version" id="version-windows" type="radio" value="version-windows">
+              <label class="version-value__label" for="version-windows">Windows Phone</label>
+            </p>
+          </fieldset>
+          <div class="form__comment comment">
+            <p class="comment__description">
+              Опишите свои эмоции
+            </p>
+            <textarea class="comment__textarea" name="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          <button class="form__submit" type="submit">Отправить форму</button>
+        </form>
+        <p class="contest__complete">
+          * — обязательные поля
+        </p>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" heigt="100" alt="Мобильное приложение Пинк">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="http://twitter.com">Мы в твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="http://facebook.com">Мы в фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="http://www.youtube.com">Мы на ютуб</a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">
+          Разработано
+        </span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="http://placehold.it/150x100" width="150" heigt="100" alt="HTML Academy">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>
