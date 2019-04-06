@@ -1,0 +1,25 @@
+.contacts {
+  .ul-default();
+}
+
+.contacts__method {
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.contacts__value {
+  font-family: "Open Sans Light",  Arial, sans-serif;
+  font-weight: 300;
+  color: @extra-color;
+  font-size: 24px;
+  line-height: 30px;
+  boder-bottom: 2px solid transparent;
+  &:hover,
+  &:focus {
+    color: @main-color;
+    border-bottom: 2px solid @main-color;
+  }
+  &:active {
+    color: fade(@main-color, 30%);
+  }
+}
