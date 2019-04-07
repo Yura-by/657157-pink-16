@@ -5,11 +5,13 @@
 .send__link {
   color: @extra-color;
   border-color: @extra-color;
+
   &:hover,
   &:focus {
     color: rgba(255, 255, 255, 1);
     background-color: @extra-color;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -18,13 +20,15 @@
 .send__cancel {
   color: fade(@main-color, 10%);
   border-color: fade(@main-color, 10%);
+
   &:hover,
   &:focus {
     color: fade(@main-color, 30%);
     border-color: rgba(181, 185, 190);
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: fade(@main-color, 30%);
   }
-};
+}

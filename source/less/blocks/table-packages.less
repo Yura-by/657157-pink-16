@@ -1,42 +1,28 @@
 .table-packages {
   border-collapse: collapse;
 }
+
 .table-packages__title {
   color: rgba(255, 255, 255, 1);
   background-color: @main-color;
-  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  border: 2px solid @main-color;
   border-right: 2px solid rgba(229, 229, 229, 1);
 }
 
 .table-packages__price {
-  font-family: "Open Sans Light",  Arial, sans-serif;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
 }
 
-.table-packages__title--last {
-  border-right-color: @main-color;
-}
-
-.table-packages__row {
-  border-bottom: 2px solid rgba(229, 229, 229, 1);
-}
-
-.table-packages__row--first {
-  border-bottom: none;
-}
-
 .table-packages__data {
-  border-right: 2px solid rgba(229, 229, 229, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
 }
 
-.table-packages__data:nth-child(1) {
-  border-left: 2px solid rgba(229, 229, 229, 1);
-}
-
-.table-packages__data--first {
-  border-top: 2px solid rgba(229, 229, 229, 1);
+.table-packages__title--last {
+  border-right: 2px solid @main-color;
 }
