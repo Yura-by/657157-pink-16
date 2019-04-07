@@ -1,0 +1,49 @@
+.name-value {
+  .h-default();
+}
+
+.name-value__label {
+  line-height: 30px;
+  color: @extra-color;
+  text-transform: uppercase;
+}
+.name-value__input {
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid rgba(229, 229, 229, 1);
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+  }
+  &:active {
+    border-color: @extra-color;
+  }
+}
+
+.name-value__input::-webkit-input-placeholder {
+    opacity: 1;
+    color: @main-color;
+}
+
+.name-value__input:-ms-input-placeholder {
+    opacity: 1;
+    color: @main-color;
+}
+
+.name-value__input::-ms-input-placeholder {
+    opacity: 1;
+    color: @main-color;
+}
+
+.name-value__input::placeholder {
+    opacity: 1;
+    color: @main-color;
+}
+
+.name-value__input:-ms-input-placeholder {
+    color: @main-color;
+}
+
+.name-value__input::-ms-input-placeholder {
+    color: @main-color;
+}

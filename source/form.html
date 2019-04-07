@@ -45,8 +45,8 @@
               <input class="name-value__input" name="surname" id="surname" type="text" placeholder="Укажите фамилию *" required>
             </p>
             <p class="name__item name-value">
-              <label class="personal-name__label" for="personal-name">Имя:</label>
-              <input class="personal-name__input" name="personal-name" id="personal-name" type="text" placeholder="Введите ваше имя *" required>
+              <label class="name-value__label" for="personal-name">Имя:</label>
+              <input class="name-value__input" name="personal-name" id="personal-name" type="text" placeholder="Введите ваше имя *" required>
             </p>
             <p class="name__item name-value">
               <label class="name-value__label" for="patronymic">Отчество:</label>
@@ -56,27 +56,27 @@
           <fieldset class="form__progress progress">
             <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="selfi" id="selfi" type="checkbox" checked>
+              <input class="progress-value__input visually-hidden" name="selfi" id="selfi" type="checkbox" checked>
               <label class="progress-value__label" for="selfi">Сделал селфи с акулой</label>
             </p>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="burned" id="burned" type="checkbox" checked>
+              <input class="progress-value__input visually-hidden" name="burned" id="burned" type="checkbox" checked>
               <label class="progress-value__label" for="burned">Обгорел на пляже</label>
             </p>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="chuck-norris" id="chuck-norris" type="checkbox">
+              <input class="progress-value__input visually-hidden" name="chuck-norris" id="chuck-norris" type="checkbox">
               <label class="progress-value__label" for="chuck-norris">Видел Чака Норриса</label>
             </p>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="souvenirs" id="souvenirs" type="checkbox">
+              <input class="progress-value__input visually-hidden" name="souvenirs" id="souvenirs" type="checkbox">
               <label class="progress-value__label" for="souvenirs">Накупил сувениров</label>
             </p>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="tower" id="tower" type="checkbox" checked>
+              <input class="progress-value__input visually-hidden" name="tower" id="tower" type="checkbox" checked>
               <label class="progress-value__label" for="tower">Удержал башню</label>
             </p>
             <p class="progress__item progress-value">
-              <input class="progress-value__input" name="rout" id="rout" type="checkbox">
+              <input class="progress-value__input visually-hidden" name="rout" id="rout" type="checkbox">
               <label class="progress-value__label" for="rout">Разгромил отель</label>
             </p>
           </fieldset>
@@ -94,15 +94,15 @@
           <fieldset class="form__version version">
             <legend class="version__legend">С каким приложение путешествовали?</legend>
             <p class="version__item version-value">
-              <input class="version-value__input" name="version" id="version-apple" type="radio" value="version-apple" checked>
+              <input class="version-value__input visually-hidden" name="version" id="version-apple" type="radio" value="version-apple" checked>
               <label class="version-value__label" for="version-apple">Pink для iOS</label>
             </p>
             <p class="version__item version-value">
-              <input class="version-value__input" name="version" id="version-android" type="radio" value="version-android">
+              <input class="version-value__input visually-hidden" name="version" id="version-android" type="radio" value="version-android">
               <label class="version-value__label" for="version-android">Pink на Android</label>
             </p>
             <p class="version__item version-value">
-              <input class="version-value__input" name="version" id="version-windows" type="radio" value="version-windows">
+              <input class="version-value__input visually-hidden" name="version" id="version-windows" type="radio" value="version-windows">
               <label class="version-value__label" for="version-windows">Windows Phone</label>
             </p>
           </fieldset>
@@ -114,10 +114,9 @@
           </div>
           <button class="form__submit" type="submit">Отправить форму</button>
         </form>
-        <p class="contest__complete">
-          * — обязательные поля
+        <p class="contest__complete complete">
+          <span class="complete__badge">*</span> — обязательные поля
         </p>
-
       </section>
     </main>
 
