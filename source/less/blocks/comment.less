@@ -1,0 +1,27 @@
+.comment {
+  .h-default();
+  line-height: 18px;
+  color: @extra-color;
+  text-transform: uppercase;
+}
+
+.comment__textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @main-color;
+  border: 2px solid rgba(229, 229, 229, 1);
+
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+  }
+
+  &:active {
+    border-color: @extra-color;
+  }
+}
+
+.comment__description {
+  .h-default();
+}

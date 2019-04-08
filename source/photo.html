@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии с Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -10,24 +11,24 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Пинк">
       </a>
-      <button class="page-header__toggle" type="button">Скрыть меню</button>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Скрыть меню</span></button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Фотографии</a>
+            <a class="site-list__link site-list__link--active">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--last">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <h1 class="pade-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
 
     <main class="page-main-photo">
@@ -164,34 +165,36 @@
           Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!
         </b>
-        <img class="edit-photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Зимняя дорога">
-        <ul class="edit-photo__list editor">
-          <li class="editor__item editor__item--current">
-            <button class="editor__toggle editor__toggle--crop" type="button">Кадрирование</button>
-            <div class="editor__config config">
-              <div class="config__scale"></div>
-              <button class="config__button" type="button">Ползунок</button>
-            </div>
-          </li>
-          <li class="editor__item">
-            <button class="editor__toggle editor__toggle--fill" type="button">Заливка</button>
-            <div class="editor__config config">
-              <div class="config__scale"></div>
-              <button class="config__button" type="button">Ползунок</button>
-            </div>
-          </li>
-          <li class="editor__item">
-            <button class="editor__toggle editor__toggle--contrast" type="button">Контраст</button>
-            <div class="editor__config config">
-              <div class="config__scale"></div>
-              <button class="config__button" type="button">Ползунок</button>
-            </div>
-          </li>
-        </ul>
-        <p class="edit-photo__send send">
-          <a class="send__link button send__link--post-it" href="#">Запостить</a>
-          <a class="send__link button send__link--post-cancel" href="#">Отмена</a>
-        </p>
+        <div class="edit-photo__wrapper">
+          <img class="edit-photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Зимняя дорога">
+          <ul class="edit-photo__list editor">
+            <li class="editor__item editor__item--current">
+              <button class="editor__toggle editor__toggle--crop" type="button"><span class="visually-hidden">Кадрирование</span></button>
+              <div class="editor__config config">
+                <div class="config__scale"></div>
+                <button class="config__button" type="button"><span class="visually-hidden">Ползунок</span></button>
+              </div>
+            </li>
+            <li class="editor__item">
+              <button class="editor__toggle editor__toggle--fill" type="button"><span class="visually-hidden">Заливка</span></button>
+              <div class="editor__config config">
+                <div class="config__scale"></div>
+                <button class="config__button" type="button"><span class="visually-hidden">Ползунок</span></button>
+              </div>
+            </li>
+            <li class="editor__item">
+              <button class="editor__toggle editor__toggle--contrast" type="button"><span class="visually-hidden">Контраст</span></button>
+              <div class="editor__config config">
+                <div class="config__scale"></div>
+                <button class="config__button" type="button"><span class="visually-hidden">Ползунок</span></button>
+              </div>
+            </li>
+          </ul>
+          <p class="edit-photo__send send">
+            <a class="send__link button" href="#">Запостить</a>
+            <a class="send__cancel button" href="#">Отмена</a>
+          </p>
+        </div>
       </section>
     </main>
 
@@ -201,13 +204,13 @@
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="http://twitter.com">Мы в твиттере</a>
+          <a class="social__link social__link--twitter" href="http://twitter.com"><span class="visually-hidden">Мы в твиттере</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="http://facebook.com">Мы в фейсбуке</a>
+          <a class="social__link social__link--facebook" href="http://facebook.com"><span class="visually-hidden">Мы в фейсбуке</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="http://www.youtube.com">Мы на ютуб</a>
+          <a class="social__link social__link--youtube" href="http://www.youtube.com"><span class="visually-hidden">Мы на ютуб</span></a>
         </li>
       </ul>
       <p class="page-footer__copyright copyright">

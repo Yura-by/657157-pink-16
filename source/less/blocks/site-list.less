@@ -1,0 +1,40 @@
+.site-list {
+  .ul-default();
+}
+
+.site-list__item {
+  padding-top: 16px;
+  padding-bottom: 13px;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+.site-list__item--last {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.site-list__link {
+  display: block;
+  border-bottom: 2px solid transparent;
+
+  color: rgba(255, 255, 255, 1);
+
+  &:hover,
+  &:focus {
+    color: @extra-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+  }
+}
+
+.site-list__link--active {
+  color: rgba(255, 255, 255, 0.3);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
