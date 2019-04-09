@@ -8,12 +8,12 @@
 
   &:hover,
   &:focus {
-    color: rgba(255, 255, 255, 1);
+    color: @paper-color;
     background-color: @extra-color;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: fade(@paper-color, 30%);
   }
 }
 
@@ -24,11 +24,11 @@
   &:hover,
   &:focus {
     color: fade(@main-color, 30%);
-    border-color: rgba(181, 185, 190);
+    border-color: (@main-color, 30%);
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: fade(@paper-color, 30%);
     background-color: fade(@main-color, 30%);
   }
 }

@@ -1,7 +1,7 @@
 .form__submit {
   box-sizing: border-box;
   width: 280px;
-  color: rgba(255, 255, 255, 1);
+  color: @paper-color;
   background-color: rgba(42, 171, 109, 1);
   border: none;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -20,11 +20,11 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: fade(@paper-color, 30%);
     background-color: rgba(28, 155, 94, 1);
   }
 }
 
 .form-submit--disabled {
-  background-color: rgba(229, 229, 229);
+  background-color: @trans-dark-color;
 }
