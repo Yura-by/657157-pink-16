@@ -1,11 +1,14 @@
 .site-list {
   .ul-default();
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list__item {
   padding-top: 16px;
   padding-bottom: 13px;
   border-top: 1px solid @contrast-color;
+  text-align: center;
 }
 
 .site-list__item--last {
@@ -36,5 +39,20 @@
   &:focus,
   &:active {
     color: fade(@paper-color, 30%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .site-list__item {
+    border: none;
   }
 }

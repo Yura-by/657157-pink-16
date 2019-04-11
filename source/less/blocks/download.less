@@ -1,5 +1,5 @@
 .download {
-  background-color: @main-color;
+  width: 280px;
 }
 
 .download__title {
@@ -26,4 +26,31 @@
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-weight: 300;
   color: @paper-color;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.download__lid {
+  display: none;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 300;
+  color: @paper-color;
+  text-transform: none;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+  }
+
+  .download__lid {
+    display: block;
+  }
+
+  .download__link {
+    width: 300px;
+  }
 }
