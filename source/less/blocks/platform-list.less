@@ -1,3 +1,32 @@
 .platform-list {
   .ul-default();
+  display: flex;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  justify-content: space-between;
+}
+
+.platform-list__type {
+  display: block;
+  width: 47px;
+  height: 57px;
+}
+
+.platform-list__type--apple {
+  background-image: url("../../img/logo-apple.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 0;
+}
+
+.platform-list__type--android {
+  background-image: url("../../img/logo-android.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 8px;
+}
+
+.platform-list__type--microsoft {
+  background-image: url("../../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  background-position: 0 11px;
 }
