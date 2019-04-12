@@ -1,5 +1,5 @@
 .download {
-  background-color: @main-color;
+  width: 280px;
 }
 
 .download__title {
@@ -7,13 +7,13 @@
 }
 
 .download__link {
-  color: rgba(255, 255, 255, 1);
-  border-color: rgba(255, 255, 255, 1);
+  color: @paper-color;
+  border-color: @paper-color;
 
   &:hover,
   &:focus {
     color: @extra-color;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: @paper-color;
   }
 
   &:active {
@@ -25,5 +25,32 @@
   .h-default();
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-weight: 300;
-  color: rgba(255, 255, 255, 1);
+  color: @paper-color;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.download__lid {
+  display: none;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 300;
+  color: @paper-color;
+  text-transform: none;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+  }
+
+  .download__lid {
+    display: block;
+  }
+
+  .download__link {
+    width: 300px;
+  }
 }

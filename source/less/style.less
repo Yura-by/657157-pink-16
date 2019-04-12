@@ -7,6 +7,7 @@
 @import "blocks/download.less";
 @import "blocks/platform-list.less";
 @import "blocks/advantages.less";
+@import "blocks/study.less";
 @import "blocks/features-list.less";
 @import "blocks/reviews.less";
 @import "blocks/tariffs.less";
@@ -14,9 +15,11 @@
 @import "blocks/connection.less";
 @import "blocks/contacts.less";
 @import "blocks/map.less";
+@import "blocks/page-footer.less";
 @import "blocks/social.less";
 @import "blocks/copyright.less";
 @import "blocks/photos.less";
+@import "blocks/figure-list.less";
 @import "blocks/figure-item.less";
 @import "blocks/edit-photo.less";
 @import "blocks/editor.less";
@@ -56,13 +59,15 @@
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  font-style: normal;
   color: @main-color;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: @paper-color;
 }
 
 a {

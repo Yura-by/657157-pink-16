@@ -1,5 +1,6 @@
 .figure-item {
   margin: 0;
+  width: 100%;
 }
 
 .figure-item__description {
@@ -30,4 +31,29 @@
 
 .figure-item__legend {
   background-color: @transitional-color;
+}
+
+.figure-item__legend--best {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .figure-item {
+    width: 300px;
+  }
+
+  .figure-item--best {
+    width: auto;
+  }
+
+  .figure-item__legend--best {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .figure-item__legend--best {
+    width: 940px;
+  }
 }
