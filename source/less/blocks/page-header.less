@@ -7,7 +7,7 @@
   background-color: @main-color;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left 50% bottom 271px;
+  background-position: left 50% bottom 273px;
   min-height: 733px;
 }
 
@@ -21,6 +21,16 @@
   text-align: center;
 }
 
+.page-header__log-wrap {
+  background-color: fade(@contrast-color, 30%);
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__log-wrap--open {
+  background-color: @main-color;
+}
+
 .page-header__row {
   display: flex;
   justify-content: space-between;
@@ -31,28 +41,51 @@
 }
 
 .page-header__bottom-wrap {
-  width: 280px;
+  box-sizing: border-box;
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: right 42px top 110px ;
+  background-position: left 0 top 110px ;
   min-height: 670px;
-}
-
-.page-header__log-wrap {
-  background-color: fade(@contrast-color, 30%);
 }
 
 .page-header__logo {
   width: 75px;
-  height: 23px;
+  height: 24px;
 }
 
 .page-header__download {
   margin-bottom: 33px;
+}
+
+.page-header__toggle {
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  border:none;
+  background-color: transparent;
+}
+
+.page-header__toggle--closed {
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+}
+
+.page-header__toggle--open {
+  background-image: url("../../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,6 +93,11 @@
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0;
     min-height: 0;
+  }
+
+  .page-header__log-wrap {
+    width: auto;
+    margin: 0;
   }
 
   .page-header__row {
@@ -77,11 +115,25 @@
     justify-content: flex-start;
     padding-top: 93px;
     min-height: 0;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .page-header__logo {
     width: 150px;
     height: auto;
+  }
+
+  .page-header__logo:hover path {
+    fill: @extra-color;
+  }
+
+  .page-header__logo:focus path {
+    fill: @extra-color;
+  }
+
+  .page-header__logo:active path {
+    fill: fade(@paper-color, 30%);
   }
 
   .page-header__download {
@@ -129,8 +181,4 @@
   .page-header__download {
     margin-bottom: 123px;
   }
-}
-
-.main-nav {
-  display: none;
 }
