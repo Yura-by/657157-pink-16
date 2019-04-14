@@ -12,16 +12,18 @@
   color: @contrast-color;
   display: block;
   width: 170px;
+  margin-top: 37px;
+  margin-bottom: 11px;
 }
 
 .study__text {
   .h-default();
+  margin-bottom: 9px;
 }
 
 .study__watch {
   .h-default();
   margin-left: 20px;
-  background-image: url("../../img/icon-timer.svg");
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 96px;
   line-height: 160px;
@@ -34,6 +36,20 @@
   color: @extra-color;
   font-weight: 1000;
   border: 15px solid @extra-color;
+}
+
+.study__watch-wrap {
+  width: 240px;
+  height: 280px;
+  background-image: url("../../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 240px;
+}
+
+.study__mix-color {
+  background-color: fade(@paper-color, 70%);
+  height: 280px;
+  padding-top: 56px;
 }
 
 .study__link {
