@@ -1,0 +1,41 @@
+.slider__toggles {
+  width: 64px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.slider__toggle {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: fade(@main-color, 30%);
+  border: none;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: fade(@main-color, 60%);
+  }
+
+  &:active {
+    background-color: fade(@main-color, 10%);
+  }
+}
+
+.slider__toggle--current {
+  background-color: transparent;
+  box-shadow: 0 0 0 3px @main-color;
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
+}

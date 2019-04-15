@@ -36,20 +36,27 @@
   color: @extra-color;
   font-weight: 1000;
   border: 15px solid @extra-color;
+  position: relative;
+  z-index: 2;
 }
 
 .study__watch-wrap {
   width: 240px;
   height: 280px;
+  padding-top: 58px;
+  position: relative;
+}
+
+.study__bg {
+  position: absolute;
+  width: 240px;
+  height: 280px;
   background-image: url("../../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-size: 240px;
-}
-
-.study__mix-color {
-  background-color: fade(@paper-color, 70%);
-  height: 280px;
-  padding-top: 56px;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
 }
 
 .study__link {
@@ -78,7 +85,7 @@
 
 @media (min-width: @tablet-width) {
   .study {
-    display: block;
+    display: flex;;
   }
 }
 
@@ -99,19 +106,43 @@
   .study__lid {
     width: 100%;
     line-height: 30px;
+    margin-top: 95px;
+    margin-bottom: 24px;
+  }
+
+  .study__lid br {
+    display: none;
   }
 
   .study__text {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 28px;
   }
 
   .study__watch {
-    width: 250px;
-    height: 250px;
+    width: 255px;
+    height: 255px;
     font-size: 120px;
     line-height: 200px;
     border-width: 20px;
     margin-left: 22px;
+  }
+
+  .study__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .study__watch-wrap {
+    width: 300px;
+    height: 350px;
+    padding-top: 70px;
+  }
+
+  .study__bg {
+    width: 300px;
+    height: 350px;
+    background-size: 300px;
   }
 }

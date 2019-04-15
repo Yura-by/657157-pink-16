@@ -1,7 +1,37 @@
 .tariffs {
   background-color: @transitional-color;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 105px;
 }
 
 .tariffs__toggles {
   .h-default();
 }
+
+.tariffs__polygon polygon {
+  fill: @paper-color;
+}
+
+.tariffs__polygon {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -600px;
+}
+
+/*@media (min-width: @tablet-width) {
+  .tariffs {
+    padding-bottom: 68px;
+  }
+
+  .tariffs__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
+}*/

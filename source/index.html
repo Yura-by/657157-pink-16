@@ -112,9 +112,8 @@
       <section class="page-main__study study">
         <div class="study__wrapper">
           <div class="study__watch-wrap">
-            <div class="study__mix-color">
-              <p class="study__watch">24</p>
-            </div>
+            <div class="study__bg"></div>
+            <p class="study__watch">24</p>
           </div>
           <div class="study__content">
             <h2 class="visually-hidden">Исследования приложения</h2>
@@ -132,24 +131,40 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__decorate"></div>
+          <button class="reviews__toggle" type="button">
+            <span class="visually-hidden">Предыдущий</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>
+          </button>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">
-                Николай Петров
+                Николай Петров<span class="reviews__career">25 лет, водитель трамвая</span>
               </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
           </div>
+          <button class="reviews__toggle" type="button">
+            <span class="visually-hidden">Следующий</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+          </button>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
       <section class="tariffs">
+        <svg class="tariffs__polygon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+            <polygon fill="#000000" points="1200,0 0,0 0,94.074 "/>
+        </svg>
         <div class="tariffs__wrapper slider">
           <h2 class="visually-hidden">Описание тарифов</h2>
           <table class="tariffs__table slider__table table-packages">
@@ -170,47 +185,29 @@
               <td class="table-packages__data">
                 Розовый фильтр
               </td>
-              <td class="table-packages__data">
-                yes
-              </td>
-              <td class="table-packages__data">
-                yes
-              </td>
-              <td class="table-packages__data">
-                yes
-              </td>
+              <td class="table-packages__data table-packages__data--yes"></td>
+              <td class="table-packages__data table-packages__data--yes"></td>
+              <td class="table-packages__data table-packages__data--yes"></td>
             <tr class="table-packages__row">
               <td class="table-packages__data">
                 Смайлики
               </td>
-              <td class="table-packages__data table-packages__data--no">
-                no
-              </td>
-              <td class="table-packages__data">
-                yes
-              </td>
-              <td class="table-packages__data">
-                yes
-              </td>
+              <td class="table-packages__data table-packages__data--no"></td>
+              <td class="table-packages__data table-packages__data--yes"></td>
+              <td class="table-packages__data table-packages__data--yes"></td>
             </tr>
             <tr class="table-packages__row">
               <td class="table-packages__data">
                 Комментарии
               </td>
-              <td class="table-packages__data table-packages__data--no">
-                no
-              </td>
-              <td class="table-packages__data able-packages__data--no">
-                no
-              </td>
-              <td class="table-packages__data">
-                yes
-              </td>
+              <td class="table-packages__data table-packages__data--no"></td>
+              <td class="table-packages__data table-packages__data--no"></td>
+              <td class="table-packages__data table-packages__data--yes"></td>
             </tr>
           </table>
           <p class="tariffs__toggles slider__toggles">
             <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
