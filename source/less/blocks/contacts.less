@@ -5,6 +5,9 @@
 .contacts__method {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
+  display: block;
+  text-align: center;
+  line-height: 24px;
 }
 
 .contacts__value {
@@ -12,8 +15,10 @@
   font-weight: 300;
   color: @extra-color;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 31px;
   border-bottom: 2px solid transparent;
+  display: block;
+  text-align: center;
 
   &:hover,
   &:focus {
@@ -25,4 +30,8 @@
     color: fade(@main-color, 30%);
     border-bottom: none;
   }
+}
+
+.contacts__item {
+  margin-bottom: 20px;
 }
