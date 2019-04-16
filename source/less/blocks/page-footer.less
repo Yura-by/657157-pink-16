@@ -4,10 +4,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
 
 .page-footer--hidden {
   display: none;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin-bottom: 32px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: @extra-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,10 +38,16 @@
   .page-footer--hidden {
     display: flex;
   }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 940px;
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 }

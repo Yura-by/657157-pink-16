@@ -1,6 +1,50 @@
 .social {
   .ul-default();
   width: 180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+}
+
+.social__link {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
   height: 50px;
-  background-color: grey;
+  border: 3px solid fade(@main-color, 10%);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social__link--twitter {
+  background-image: url("../../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--facebook {
+  background-image: url("../../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--youtube {
+  background-image: url("../../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
 }
