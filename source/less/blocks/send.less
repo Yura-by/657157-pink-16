@@ -5,6 +5,9 @@
 .send__link {
   color: @extra-color;
   border-color: @extra-color;
+  margin-bottom: 12px;
+  margin: 0 auto;
+  margin-bottom: 13px;
 
   &:hover,
   &:focus {
@@ -20,6 +23,7 @@
 .send__cancel {
   color: fade(@main-color, 10%);
   border-color: fade(@main-color, 10%);
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -30,5 +34,36 @@
   &:active {
     color: fade(@paper-color, 30%);
     background-color: fade(@main-color, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .send__link {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  .send__cancel {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .send {
+    display: flex;
+    flex-wrap: wrap;
+    width: 410px;
+    justify-content: space-between;
+  }
+
+  .send__link {
+    width: 183px;
+    margin: 0;
+  }
+
+  .send__cancel {
+    width: 183px;
+    margin: 0;
   }
 }
