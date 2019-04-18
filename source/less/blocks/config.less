@@ -1,0 +1,84 @@
+.config {
+  width: 240px;
+  height: 14px;
+  position: relative;
+  display: none;
+}
+
+.config__scale {
+  width: 240px;
+  height: 2px;
+  background-color: @main-color;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.config__button {
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid @extra-color;
+  background-color: @paper-color;
+  position: absolute;
+
+  &:hover,
+  &:focus {
+    background-color: @extra-color;
+  }
+}
+
+.config--active {
+  display: flex;
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+}
+
+.config__button--active {
+  right: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .config {
+    width: 202px;
+    position: relative;
+    display: flex;
+    bottom: 0;
+  }
+
+  .config__button--crop {
+    right: 41px;
+  }
+
+  .config__button--fill {
+    left: 26px;
+  }
+
+  .config__button--contrast {
+    right: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .config {
+    width: 289px;
+  }
+
+  .config__scale {
+    width: 289px;
+  }
+
+  .config__button--crop {
+    left: 71px;
+  }
+
+  .config__button--fill {
+    left: 247px;
+  }
+
+  .config__button--contrast {
+    right: 115px;
+  }
+}

@@ -5,6 +5,9 @@
 .contacts__method {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
+  display: block;
+  text-align: center;
+  line-height: 24px;
 }
 
 .contacts__value {
@@ -12,8 +15,10 @@
   font-weight: 300;
   color: @extra-color;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 31px;
   border-bottom: 2px solid transparent;
+  display: block;
+  text-align: center;
 
   &:hover,
   &:focus {
@@ -24,5 +29,57 @@
   &:active {
     color: fade(@main-color, 30%);
     border-bottom: none;
+  }
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .contacts__item {
+    width: 320px;
+  }
+
+  .contacts__method {
+    line-height: 30px;
+  }
+
+  .contacts__item--adress {
+    width: 280px;
+    margin-top: 22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item {
+    width: 300px;
+  }
+
+  .contacts__item--adress {
+    width: 280px;
+    order: 1;
+  }
+
+  .contacts__item--wrire {
+    order: 2;
+  }
+
+  .contacts {
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+
+  .contacts__method {
+    margin-bottom: 18px;
   }
 }

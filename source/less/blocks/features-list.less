@@ -12,11 +12,16 @@
   line-height: 24px;
   color: @contrast-color;
   text-align: center;
+  margin-bottom: 13px;
 }
 
 .features-list__description {
   .h-default();
   text-align: center;
+}
+
+.features-list__item {
+  margin-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,6 +36,10 @@
   .features-list__description {
     text-align: left;
   }
+
+  .features-list__item {
+    margin-bottom: 33px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -43,6 +52,8 @@
   .features-list__title {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 24px;
+    text-align: center;
   }
 
   .features-list__item {
@@ -50,8 +61,10 @@
   }
 
   .features-list__description {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
-    text-align: center;
   }
 }

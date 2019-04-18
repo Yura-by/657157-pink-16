@@ -1,10 +1,16 @@
 .figure-item {
   margin: 0;
-  width: 100%;
+  margin-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .figure-item__description {
   margin: 0;
+  padding-top: 18px;
+  padding-right: 5px;
+  padding-left: 17px;
+  margin-bottom: 9px;
 }
 
 .figure-item__text {
@@ -21,39 +27,143 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
-}
-
-.figure-item__likes {
-  font-size: 12px;
-  color: @extra-color;
   text-transform: uppercase;
 }
 
+.figure-item__likes {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  color: @extra-color;
+  text-transform: uppercase;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    top: 6px;
+    left: 18px;
+  }
+}
+
 .figure-item__legend {
+  padding-bottom: 18px;
   background-color: @transitional-color;
+  flex-grow: 1;
 }
 
 .figure-item__legend--best {
   width: 280px;
   margin: 0 auto;
+  flex-grow: 0;
+}
+
+.figure-item__photo {
+  display: block;
+}
+
+.figure-item__photo--best {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .figure-item {
     width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .figure-item__photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .figure-item__legend {
+    width: 300px;
+    padding-bottom: 22px;
+    box-sizing: border-box;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure-item__likes::before {
+    position: static;
+  }
+
+  .figure-item__likes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    width: 244px;
+    padding-left: 0;
+    margin-top: auto;
+  }
+
+  .figure-item__photo--best {
+    width: auto;
+    height: 509px;
   }
 
   .figure-item--best {
     width: auto;
+    margin-bottom: 50px;
   }
 
   .figure-item__legend--best {
     width: 620px;
+    position: relative;
+    padding-bottom: 12px;
+    min-height: 0;
+  }
+
+  .figure-item__description {
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+
+  .figure-item__likes--best {
+    position: absolute;
+    right: 9px;
+    top: 25px;
+    padding-left: 0;
+    width: 120px;
+    margin-right: 20px;
+  }
+
+  .figure-item--best .figure-item__likes::before {
+    left: 106px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .figure-item__legend--best {
     width: 940px;
+  }
+
+  .figure-item__photo {
+    height: 400px;
+  }
+
+  .figure-item {
+    margin-bottom: 52px;
+  }
+
+  .figure-item__photo--best {
+    width: 100%;
+    height: 506px;
+  }
+
+  .figure-list__sticker {
+    top: 54px;
+    right: 130px;
   }
 }
