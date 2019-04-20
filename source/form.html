@@ -69,7 +69,7 @@
             </p>
             <p class="name__item name-value">
               <label class="name-value__label" for="patronymic">Отчество:</label>
-              <input class="name-value__input" name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже *" required>
+              <input class="name-value__input" name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
           <div class="form__wrapper-progress">
@@ -114,32 +114,35 @@
               </p>
             </fieldset>
           </div>
-          <fieldset class="form__version version">
-            <legend class="version__legend">С каким приложение путешествовали?</legend>
-            <p class="version__item version-value">
-              <input class="version-value__input visually-hidden" name="version" id="version-apple" type="radio" value="version-apple" checked>
-              <label class="version-value__label" for="version-apple">Pink для iOS</label>
-            </p>
-            <p class="version__item version-value">
-              <input class="version-value__input visually-hidden" name="version" id="version-android" type="radio" value="version-android">
-              <label class="version-value__label" for="version-android">Pink на Android</label>
-            </p>
-            <p class="version__item version-value">
-              <input class="version-value__input visually-hidden" name="version" id="version-windows" type="radio" value="version-windows">
-              <label class="version-value__label" for="version-windows">Windows Phone</label>
-            </p>
-          </fieldset>
-          <div class="form__comment comment">
-            <p class="comment__description">
-              Опишите свои эмоции
-            </p>
-            <textarea class="comment__textarea" name="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <div class="form__wrapper-version">
+            <fieldset class="form__version version">
+              <legend class="version__legend">С каким приложением путешествовали?</legend>
+              <p class="version__item version-value">
+                <input class="version-value__input visually-hidden" name="version" id="version-apple" type="radio" value="version-apple" checked>
+                <label class="version-value__label" for="version-apple">Pink для iOS</label>
+              </p>
+              <p class="version__item version-value">
+                <input class="version-value__input visually-hidden" name="version" id="version-android" type="radio" value="version-android">
+                <label class="version-value__label" for="version-android">Pink на Android</label>
+              </p>
+              <p class="version__item version-value">
+                <input class="version-value__input visually-hidden" name="version" id="version-windows" type="radio" value="version-windows">
+                <label class="version-value__label" for="version-windows">Windows Phone</label>
+              </p>
+            </fieldset>
           </div>
-          <button class="form__submit" type="submit">Отправить форму</button>
+          <div class="form__wrapper-comment">
+            <fieldset class="form__comment comment">
+              <legend class="comment__legend">Опишите свои эмоции</legend>
+              <textarea class="comment__textarea" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          <div class="form__wrapper-bottom">
+            <button class="form__submit" type="submit">Отправить форму</button>
+            <p class="form__complete complete">
+              <span class="complete__badge">*</span> — обязательные поля
+            </p>
+          </div>
         </form>
-        <p class="contest__complete complete">
-          <span class="complete__badge">*</span> — обязательные поля
-        </p>
       </section>
     </main>
 

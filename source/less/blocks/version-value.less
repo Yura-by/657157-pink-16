@@ -1,8 +1,55 @@
 .version-value {
   .h-default();
+  margin-bottom: 35px;
 }
 
 .version-value__label {
+  display: block;
+  position: relative;
   font-size: 18px;
   line-height: 30px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 69px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+    border: 2px solid @trans-dark-color;
+    border-radius: 50%;
+    background-color: @paper-color;
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @extra-color;
+  }
+}
+
+.version-value__input:hover + .version-value__label::before,
+.version-value__input:focus + .version-value__label::before {
+  border-color: @main-color;
+}
+
+.version-value__input:active + .version-value__label::before {
+  border-color: @extra-color;
+}
+
+
+.version-value__input:checked + .version-value__label::after {
+  display: block;
 }
