@@ -1,8 +1,41 @@
 .progress-value {
   .h-default();
+  margin-bottom: 42px;
 }
 
 .progress-value__label {
   font-size: 18px;
   line-height: 30px;
+  display: block;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-bottom: 6px;
+  padding-left: 69px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+    border: 2px solid @trans-dark-color;
+  }
+}
+
+.progress-value__input:hover + .progress-value__label::before,
+.progress-value__input:focus + .progress-value__label::before {
+  border-color: @main-color;
+}
+
+.progress-value__input:active + .progress-value__label::before {
+  border-color: @extra-color;
+}
+
+.progress-value__input:checked + .progress-value__label::before {
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

@@ -2,15 +2,19 @@
   .h-default();
   vertical-align: bottom;
   position: relative;
-  height: 200px;
+  min-height: 200px;
 }
 
 .map {
   background-image: url("../../img/bg-map-mobile@1x.png");
   background-position: left 50% bottom -14px;
   background-repeat: no-repeat;
+  background-size: 320px;
+  min-height: 200px;
 
-  height: 200px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map__polygon {
@@ -27,7 +31,12 @@
   .map {
     background-image: url("../../img/bg-map-tablet@1x.jpg");
     background-position: left 50% bottom -126px;
-    height: 368px;
+    min-height: 368px;
+    background-size: 700px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -35,7 +44,12 @@
   .map {
     background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-position: left 50% bottom -197px;
-    height: 499px;
+    min-height: 499px;
+    background-size: 1200px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .map__polygon {
