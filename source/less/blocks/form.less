@@ -1,31 +1,5 @@
 .form__submit {
-  display: block;
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 280px;
-  color: @paper-color;
-  background-color: rgba(42, 171, 109, 1);
-  border: none;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-top: 16px;
-  padding-right: 5px;
-  padding-bottom: 16px;
-  padding-left: 5px;
-  border-radius: 4px;
   margin-bottom: 36px;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(28, 155, 94, 1);
-  }
-
-  &:active {
-    color: fade(@paper-color, 30%);
-    background-color: rgba(28, 155, 94, 1);
-  }
 }
 
 .form-submit--disabled {
@@ -50,9 +24,47 @@
 .form__wrapper-version {
   padding-top: 38px;
   padding-bottom: 6px;
+  background-color: @transitional-color;
 }
 
 .form__wrapper-comment {
   padding-top: 37px;
   padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__wrapper-progress {
+    order: 3;
+  }
+
+  .form__wrapper-contacts {
+    padding-top: 51px;
+    order: 2;
+  }
+
+  .form__wrapper-version {
+    order: 1;
+    padding-top: 8px;
+    background-color: transparent;
+  }
+
+  .form__wrapper-comment {
+    order: 4;
+    padding-top: 51px;
+  }
+
+  .form__wrapper-bottom {
+    order: 5;
+  }
+
+  .form__wrapper-progress  {
+    padding-top: 29px;
+    padding-bottom: 6px;
+    background-color: transparent;
+  }
 }

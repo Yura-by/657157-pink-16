@@ -47,3 +47,21 @@
   opacity: 1;
   color: @main-color;
 }
+
+@media (min-width: @tablet-width) {
+  .name-value {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 51px;
+  }
+
+  .name-value__input {
+    flex-grow: 1;
+  }
+
+  .name-value__label {
+    max-width: 200px;
+    padding: 0;
+    margin-right: 19px;
+  }
+}
