@@ -43,7 +43,9 @@
   }
 
   .comment__legend {
-    margin-bottom: 37px;
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-bottom: 34px;
   }
 
   .comment__textarea {
@@ -51,5 +53,17 @@
     margin: 0 auto;
     width: 500px;
     min-height: 192px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 936px;
+    padding-bottom: 34px;
+  }
+
+  .comment__textarea {
+    width: 820px;
+    min-height: 130px;
   }
 }

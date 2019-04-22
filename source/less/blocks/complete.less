@@ -12,10 +12,24 @@
   color: @extra-color;
 }
 
+.complete__addition {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .complete {
     width: auto;
     margin: 0;
     max-width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .complete__addition {
+    display: inline;
+  }
+
+  .complete {
+    max-width: 400px;
   }
 }
