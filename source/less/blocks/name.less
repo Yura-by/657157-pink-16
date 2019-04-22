@@ -2,12 +2,21 @@
   .fieldset-default();
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .name {
     width: 620px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name {
+    width: 435px;
+    margin: 0;
+    margin-right: auto;
+    padding-top: 12px;
   }
 }

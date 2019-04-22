@@ -56,15 +56,41 @@
   .form__wrapper-comment {
     order: 4;
     padding-top: 51px;
+    padding-bottom: 0;
   }
 
   .form__wrapper-bottom {
     order: 5;
+    padding-top: 67px;
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .form__wrapper-progress  {
     padding-top: 29px;
     padding-bottom: 6px;
     background-color: transparent;
+  }
+
+  .form__submit {
+    margin: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form__wrapper-version {
+    padding: 0;
+    display: flex;
   }
 }
