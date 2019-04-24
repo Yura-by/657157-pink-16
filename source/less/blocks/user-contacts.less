@@ -1,3 +1,45 @@
 .user-contacts {
   .fieldset-default();
+  width: 280px;
+  margin: 0 auto;
+}
+
+.user-contacts__legend {
+  display: none;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @extra-color;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts__legend {
+    display: block;
+    box-sizing: border-box;
+    padding-right: 33px;
+    padding-left: 33px;
+    margin-bottom: 36px;
+  }
+
+  .user-contacts {
+    width: 620px;
+    border: 2px solid @trans-dark-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts {
+    width: 936px;
+  }
+
+  .user-contacts__legend {
+    margin-bottom: 34px;
+  }
+
+  .user-contacts__inner {
+    width: 820px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }

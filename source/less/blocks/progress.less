@@ -1,6 +1,7 @@
 .progress {
   .fieldset-default();
-  background-color: @transitional-color;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .progress__legend {
@@ -9,4 +10,38 @@
   line-height: 18px;
   color: @extra-color;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .progress {
+    width: 620px;
+    border: 2px solid @trans-dark-color;
+    padding-bottom: 6px;
+  }
+
+  .progress__legend {
+    width: auto;
+    padding-right: 33px;
+    padding-left: 33px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .progress {
+    width: 936px;
+    padding-bottom: 11px;
+  }
+
+  .progress__inner {
+    display: flex;
+    width: 820px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }

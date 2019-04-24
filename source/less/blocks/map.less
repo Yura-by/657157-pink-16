@@ -1,33 +1,64 @@
-.map__wrapper {
-  .h-default();
-  vertical-align: bottom;
+
+.map__inner {
+  background-image: url("../../img/bg-triangle-white-footer.svg");
+  background-position: left 50% top 0;
+  background-repeat: no-repeat;
+  min-height: 227px;
   position: relative;
-  height: 200px;
 }
 
 .map {
   background-image: url("../../img/bg-map-mobile@1x.png");
-  background-position: left 50% bottom -14px;
+  background-position: left 50% bottom 0;
   background-repeat: no-repeat;
+  background-size: 320px;
 
-  height: 200px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
 }
 
-.map__polygon {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
+.map__button {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 50%;
+  background-color: @paper-color;
+  border: none;
+  top: 121px;
+  left: 50%;
+  margin-left: -18px;
 
-.map__polygon polygon {
-  fill: @paper-color;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: @extra-color;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map {
     background-image: url("../../img/bg-map-tablet@1x.jpg");
     background-position: left 50% bottom -126px;
-    height: 368px;
+    min-height: 374px;
+    background-size: 700px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .map__inner {
+    background-size: 100% auto;
+  }
+
+  .map__button {
+    top: 192px;
   }
 }
 
@@ -35,11 +66,15 @@
   .map {
     background-image: url("../../img/bg-map-desktop@1x.jpg");
     background-position: left 50% bottom -197px;
-    height: 499px;
+    min-height: 513px;
+    background-size: 1200px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+    }
   }
 
-  .map__polygon {
-    width: 1200px;
-    height: auto;
+  .map__button {
+    top: 274px;
   }
 }

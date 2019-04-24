@@ -1,3 +1,32 @@
 .contest__description {
   .h-default();
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 34px;
+}
+
+.contest__sentence {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contest__sentence {
+    display: inline;
+  }
+
+  .contest__description {
+    font-size: 18px;
+    width: 520px;
+    padding-top: 93px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__description {
+    width: 800px;
+  }
 }

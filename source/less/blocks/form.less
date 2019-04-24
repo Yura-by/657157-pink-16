@@ -1,30 +1,106 @@
 .form__submit {
-  box-sizing: border-box;
-  width: 280px;
-  color: @paper-color;
-  background-color: rgba(42, 171, 109, 1);
-  border: none;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-top: 16px;
-  padding-right: 5px;
-  padding-bottom: 16px;
-  padding-left: 5px;
-  border-radius: 4px;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(28, 155, 94, 1);
-  }
-
-  &:active {
-    color: fade(@paper-color, 30%);
-    background-color: rgba(28, 155, 94, 1);
-  }
+  margin-bottom: 36px;
 }
 
 .form-submit--disabled {
   background-color: @trans-dark-color;
+}
+
+.form__wrapper-progress {
+  background-color: @transitional-color;
+  padding-top: 38px;
+}
+
+.form__progress {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__wrapper-contacts {
+  padding-top: 31px;
+  padding-bottom: 25px;
+}
+
+.form__wrapper-version {
+  padding-top: 38px;
+  padding-bottom: 6px;
+  background-color: @transitional-color;
+}
+
+.form__wrapper-comment {
+  padding-top: 37px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__wrapper-progress {
+    order: 3;
+    padding-top: 29px;
+    padding-bottom: 6px;
+    background-color: transparent;
+  }
+
+  .form__wrapper-contacts {
+    padding-top: 51px;
+    order: 2;
+  }
+
+  .form__wrapper-version {
+    order: 1;
+    padding-top: 8px;
+    background-color: transparent;
+  }
+
+  .form__wrapper-comment {
+    order: 4;
+    padding-top: 51px;
+    padding-bottom: 0;
+  }
+
+  .form__wrapper-bottom {
+    order: 5;
+    padding-top: 67px;
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__submit {
+    margin: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form__wrapper-version {
+    padding: 0;
+    display: flex;
+  }
+
+  .form__wrapper-contacts {
+    padding-top: 57px;
+  }
+
+  .form__wrapper-progress {
+    padding-top: 31px;
+  }
+
+  .form__wrapper-bottom {
+    width: 940px;
+    padding-top: 73px;
+  }
 }
