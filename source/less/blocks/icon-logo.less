@@ -1,0 +1,27 @@
+.icon-logo__desktop {
+  display: none;
+}
+
+.icon-logo__tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .icon-logo__tablet {
+    display: block;
+  }
+
+  .icon-logo__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .icon-logo__tablet {
+    display: none;
+  }
+
+  .icon-logo__desktop {
+    display: block;
+  }
+}

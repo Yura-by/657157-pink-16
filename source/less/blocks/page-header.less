@@ -87,6 +87,15 @@
   height: 24px;
 }
 
+.page-header__logo:hover .page-header__svg,
+.page-header__logo:focus .page-header__svg {
+  fill: @extra-color;
+}
+
+.page-header__logo:active .page-header__svg {
+  fill: fade(@paper-color, 30%);
+}
+
 .page-header__toggle {
   width: 50px;
   height: 24px;
@@ -109,6 +118,10 @@
 
 .page-header__toggle--nojs {
   display: none;
+}
+
+.page-header__svg {
+  fill: @paper-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -147,8 +160,8 @@
 
   .page-header__row {
     width: 620px;
-    padding-top: 43px;
-    padding-bottom: 36px;
+    padding-top: 27px;
+    padding-bottom: 33px;
   }
 
   .page-header__bottom-wrap {
