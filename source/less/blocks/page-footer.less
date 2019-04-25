@@ -8,9 +8,9 @@
   padding-bottom: 35px;
 }
 
-.page-footer--hidden {
+/*.page-footer--hidden {
   display: none;
-}
+}*/
 
 .page-footer__logo {
   display: block;
@@ -26,6 +26,22 @@
 .page-footer__logo:hover path,
 .page-footer__logo:focus path {
   fill: @extra-color;
+}
+
+.page-footer__svg {
+  fill: @main-color;
+}
+
+.page-footer__logo:hover .page-footer__svg {
+  fill: @extra-color;
+}
+
+.page-footer__logo:focus .page-footer__svg {
+  fill: @extra-color;
+}
+
+.page-footer__logo:focus .page-footer__svg {
+  fill-opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
