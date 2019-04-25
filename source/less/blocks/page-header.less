@@ -102,18 +102,67 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-}
-
-.page-header__toggle--closed {
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: right 0 top 0;
+  position: relative;
+  cursor: pointer;
 }
 
 .page-header__toggle--open {
-  background-image: url("../../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: right 0 top 0;
+  width: 27px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    width: 30px;
+    height: 5px;
+    background-color: @paper-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: @extra-color;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@extra-color, 30%);
+  }
+}
+
+.page-header__toggle--closed::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 50px;
+  height: 4px;
+  background-color: @paper-color;
+  box-shadow: 0 10px 0 0 @paper-color, 0 20px 0 0 @paper-color;
+}
+
+.page-header__toggle--closed {
+  &:hover::before,
+  &:focus::before {
+    background-color: @extra-color;
+    box-shadow: 0 10px 0 0 @extra-color, 0 20px 0 0 @extra-color;
+  }
+
+  &:active::before {
+    background-color: fade(@extra-color, 30%);
+    box-shadow: 0 10px 0 0 fade(@extra-color, 30%), 0 20px 0 0 fade(@extra-color, 30%);
+  }
 }
 
 .page-header__toggle--nojs {
@@ -172,6 +221,10 @@
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 109px;
+  }
+
+  .page-header__toggle {
+    margin-top: 17px;
   }
 
   .page-header__logo {
