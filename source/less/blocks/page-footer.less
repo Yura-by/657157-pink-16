@@ -17,10 +17,6 @@
   width: 150px;
   height: auto;
   margin-bottom: 32px;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .page-footer__logo:hover path,
@@ -40,7 +36,8 @@
   fill: @extra-color;
 }
 
-.page-footer__logo:focus .page-footer__svg {
+.page-footer__logo:active .page-footer__svg {
+  fill: @main-color;
   fill-opacity: 0.3;
 }
 
