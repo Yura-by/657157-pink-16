@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -58,17 +59,19 @@
           <div class="figure-list__sticker">Панорама дня</div>
           <figure class="figure-list__item figure-item figure-item--best">
             <p class="figure-item__photo-wrap figure-item__photo-wrap--best">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="figure-item__photo figure-item__photo--best" src="img/panorama-mobile@1x.jpg 1x" srcset="img/panorama-mobile@2x.jpg 2x" alt="Опасный спуск">
-              </picture>
+              <a class="figure-item__href" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="figure-item__photo figure-item__photo--best" src="img/panorama-mobile@1x.jpg 1x" srcset="img/panorama-mobile@2x.jpg 2x" alt="Опасный спуск">
+                </picture>
+              </a>
             </p>
             <figcaption class="figure-item__legend figure-item__legend--best">
-              <blockquote class="figure-item__description">
+              <blockquote class="figure-item__description figure-item__description--best">
                 <cite class="figure-item__author">
                   Анна
                   <span class="figure-item__time">(5 минут назад)</span>
@@ -85,14 +88,16 @@
           <div class="figure-list__inner">
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотоссессия авто">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотоссессия авто">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -111,14 +116,16 @@
             </figure>
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -137,14 +144,16 @@
             </figure>
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Прозрачная крыша">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Прозрачная крыша">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -163,14 +172,16 @@
             </figure>
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Море арбузов">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Море арбузов">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -189,14 +200,16 @@
             </figure>
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Солнце и горы">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Солнце и горы">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -215,14 +228,16 @@
             </figure>
             <figure class="figure-list__item figure-item">
               <p class="figure-item__photo-wrap">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                  <img class="figure-item__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Полет над облаками">
-                </picture>
+                <a class="figure-item__href" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="figure-item__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Полет над облаками">
+                  </picture>
+                </a>
               </p>
               <figcaption class="figure-item__legend">
                 <blockquote class="figure-item__description">
@@ -250,15 +265,17 @@
         </b>
         <div class="edit-photo__wrap">
           <div class="edit-photo__wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-               <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img class="edit-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Зимняя дорога">
-            </picture>
-            <div class="edit-photo__inner">
+            <a class="edit-photo__href" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                 <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="edit-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Зимняя дорога">
+              </picture>
+            </a>
+            <form class="edit-photo__form" method="post" action="https://echo.htmlacademy.ru">
               <div class="edit-photo__box">
                 <ul class="edit-photo__list editor">
                   <li class="editor__item editor__item--current editor__item--top">
@@ -291,17 +308,17 @@
                 </ul>
               </div>
               <p class="edit-photo__send send">
-                <a class="send__link button" href="#">Запостить</a>
-                <a class="send__cancel button" href="#">Отмена</a>
+                <button class="send__link button" type="submit">Запостить</button>
+                <button class="send__cancel button" type="reset">Отмена</button>
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <span class="visually-hidden">Логотип Пинк</span>
         <svg class="page-footer__svg" width="146.3px" height="40.375px"><use class="footer-logo__mobile" xlink:href="#sprite-logo-pink-blue-mobile"></use><use class="footer-logo__desktop" xlink:href="#sprite-logo-pink-blue-desktop"></use></svg>
       </a>
@@ -327,36 +344,7 @@
       </p>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".site-list");
-      var navToggle = document.querySelector(".page-header__toggle");
-      var logWrap = document.querySelector(".page-header__log-wrap");
-
-      navToggle.classList.remove("page-header__toggle--nojs");
-      navToggle.classList.add("page-header__toggle--closed");
-      navMain.classList.add("site-list--closed");
-      logWrap.classList.remove("page-header__log-wrap--open");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("site-list--closed")) {
-          navMain.classList.remove("site-list--closed");
-        } else {
-          navMain.classList.add("site-list--closed");
-        }
-        if (navToggle.classList.contains("page-header__toggle--closed")) {
-          navToggle.classList.remove("page-header__toggle--closed");
-          navToggle.classList.add("page-header__toggle--open");
-        } else {
-          navToggle.classList.remove("page-header__toggle--open");
-          navToggle.classList.add("page-header__toggle--closed");
-        }
-        if (logWrap.classList.contains("page-header__log-wrap--open")) {
-          logWrap.classList.remove("page-header__log-wrap--open");
-        } else {
-          logWrap.classList.add("page-header__log-wrap--open");
-        }
-      });
-    </script>
+    <script src="js/toggle.menu.min.js"></script>
 
   </body>
 </html>

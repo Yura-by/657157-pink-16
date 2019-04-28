@@ -7,6 +7,7 @@
   border-color: @extra-color;
   margin: 0 auto;
   margin-bottom: 13px;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -23,6 +24,7 @@
   color: fade(@main-color, 10%);
   border-color: fade(@main-color, 10%);
   margin: 0 auto;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -33,18 +35,20 @@
   &:active {
     color: fade(@paper-color, 30%);
     background-color: fade(@main-color, 30%);
+
   }
 }
 
 @media (min-width: @tablet-width) {
   .send__link {
     width: 260px;
+    margin: 0;
     margin-bottom: 24px;
   }
 
   .send__cancel {
     width: 260px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 

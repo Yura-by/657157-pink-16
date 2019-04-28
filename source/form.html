@@ -114,11 +114,11 @@
               <div class="user-contacts__inner">
                 <p class="user-contacts__item user-contacts-value user-contacts-value--number">
                   <label class="user-contacts-value__label" for="user-phone">Номер телефона</label>
-                  <input class="user-contacts-value__input" name="user-phone" id="user-phone" type="text" placeholder="Номер, пожалуйста">
+                  <input class="user-contacts-value__input" name="user-phone" id="user-phone" type="tel" placeholder="Номер, пожалуйста">
                 </p>
                 <p class="user-contacts__item user-contacts-value user-contacts-value--adress">
                   <label class="user-contacts-value__label" for="user-mail">Адрес почты</label>
-                  <input class="user-contacts-value__input" name="user-mail" id="user-mail" type="text" placeholder="Введите почту *" required>
+                  <input class="user-contacts-value__input" name="user-mail" id="user-mail" type="email" placeholder="Введите почту *" required>
                 </p>
               </div>
             </fieldset>
@@ -184,7 +184,7 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <span class="visually-hidden">Логотип Пинк</span>
         <svg class="page-footer__svg" width="146.3px" height="40.375px"><use class="footer-logo__mobile" xlink:href="#sprite-logo-pink-blue-mobile"></use><use class="footer-logo__desktop" xlink:href="#sprite-logo-pink-blue-desktop"></use></svg>
       </a>
@@ -210,36 +210,7 @@
       </p>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".site-list");
-      var navToggle = document.querySelector(".page-header__toggle");
-      var logWrap = document.querySelector(".page-header__log-wrap");
-
-      navToggle.classList.remove("page-header__toggle--nojs");
-      navToggle.classList.add("page-header__toggle--closed");
-      navMain.classList.add("site-list--closed");
-      logWrap.classList.remove("page-header__log-wrap--open");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("site-list--closed")) {
-          navMain.classList.remove("site-list--closed");
-        } else {
-          navMain.classList.add("site-list--closed");
-        }
-        if (navToggle.classList.contains("page-header__toggle--closed")) {
-          navToggle.classList.remove("page-header__toggle--closed");
-          navToggle.classList.add("page-header__toggle--open");
-        } else {
-          navToggle.classList.remove("page-header__toggle--open");
-          navToggle.classList.add("page-header__toggle--closed");
-        }
-        if (logWrap.classList.contains("page-header__log-wrap--open")) {
-          logWrap.classList.remove("page-header__log-wrap--open");
-        } else {
-          logWrap.classList.add("page-header__log-wrap--open");
-        }
-      });
-    </script>
+    <script src="js/toggle.menu.min.js"></script>
 
   </body>
 </html>

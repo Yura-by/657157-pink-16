@@ -12,7 +12,7 @@
 .figure-list__sticker {
   position: absolute;
   top: 0;
-  right: 20px;
+  left: 50%;
   box-sizing: border-box;
   width: 140px;
   height: 36px;
@@ -33,11 +33,16 @@
 
   .figure-list__sticker {
     top: 57px;
+    margin-left: 170px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .figure-list__inner {
     width: 940px;
+  }
+
+  .figure-list__sticker {
+    margin-left: 330px;
   }
 }

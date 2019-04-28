@@ -51,18 +51,18 @@
             Взгляните на жизнь иначе!
           </b>
           <h2 class="download__title">
-            <a class="download__link button" href="#">Скачать приложение</a>
+            <a class="download__link button" href="https://www.apple.com/itunes/">Скачать приложение</a>
           </h2>
           <ul class="download__list platform-list">
             <li class="platform-list__item">
-              <a class="platform-list__type platform-list__type--apple" href="#">
+              <a class="platform-list__type platform-list__type--apple" href="https://www.apple.com/">
                 <img class="platform__image" src= "img/logo-apple.svg" alt="Pink для iphone"></a>
             </li>
             <li class="platform-list__item">
-              <a class="platform-list__type platform-list__type--android" href="#"><img class="platform__image" src= "img/logo-android.svg" alt="Pink для Android"></a>
+              <a class="platform-list__type platform-list__type--android" href="https://www.android.com"><img class="platform__image" src= "img/logo-android.svg" alt="Pink для Android"></a>
             </li>
             <li class="platform-list__item">
-              <a class="platform-list__type platform-list__type--microsoft" href="#"><img class="platform__image" src= "img/logo-microsoft.svg" alt="Pink для Microsoft"></a>
+              <a class="platform-list__type platform-list__type--microsoft" href="https://www.microsoft.com"><img class="platform__image" src= "img/logo-microsoft.svg" alt="Pink для Microsoft"></a>
             </li>
           </ul>
           <p class="download__description">
@@ -131,6 +131,22 @@
             <svg class="reviews__prev-svg" width="21.706px" height="41.719px"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
           </button>
           <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item slider__item--current">
+              <cite class="reviews__author-name">
+                Николай Петров<span class="reviews__career">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">
+                Николай Петров<span class="reviews__career">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">
                 Николай Петров<span class="reviews__career">25 лет, водитель трамвая</span>
@@ -258,36 +274,7 @@
       </p>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".site-list");
-      var navToggle = document.querySelector(".page-header__toggle");
-      var logWrap = document.querySelector(".page-header__log-wrap");
-
-      navToggle.classList.remove("page-header__toggle--nojs");
-      navToggle.classList.add("page-header__toggle--closed");
-      navMain.classList.add("site-list--closed");
-      logWrap.classList.remove("page-header__log-wrap--open");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("site-list--closed")) {
-          navMain.classList.remove("site-list--closed");
-        } else {
-          navMain.classList.add("site-list--closed");
-        }
-        if (navToggle.classList.contains("page-header__toggle--closed")) {
-          navToggle.classList.remove("page-header__toggle--closed");
-          navToggle.classList.add("page-header__toggle--open");
-        } else {
-          navToggle.classList.remove("page-header__toggle--open");
-          navToggle.classList.add("page-header__toggle--closed");
-        }
-        if (logWrap.classList.contains("page-header__log-wrap--open")) {
-          logWrap.classList.remove("page-header__log-wrap--open");
-        } else {
-          logWrap.classList.add("page-header__log-wrap--open");
-        }
-      });
-    </script>
+    <script src="js/toggle.menu.min.js"></script>
 
   </body>
 </html>
