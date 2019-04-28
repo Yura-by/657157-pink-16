@@ -40,6 +40,10 @@
   background-position: 50% 50%;
 }
 
+.progress-value__input:disabled + .progress-value__label::before {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .progress-value {
     margin-left: 59px;
