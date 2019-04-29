@@ -2,7 +2,13 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 40px;
-  box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px 3px fade(@contrast-color, 15%);
+  background-color: @paper-color;
+  position: fixed;
+  left: 50%;
+  margin-left: -160px;
+  top: 35px;
+  display: none;
 }
 
 .popup-accepted__title {
@@ -35,6 +41,7 @@
   .popup-accepted {
     width: 460px;
     padding-top: 73px;
+    margin-left: -230px;
   }
 
   .popup-accepted__title {
@@ -59,6 +66,7 @@
     width: 782px;
     padding-top: 45px;
     padding-bottom: 0;
+    margin-left: -391px;
   }
 
   .popup-accepted__title {

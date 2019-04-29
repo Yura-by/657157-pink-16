@@ -77,7 +77,7 @@
   }
 
   .reviews__list {
-    padding-top: 140px;
+    padding-top: 149px;
   }
 
   .reviews__toggle {
@@ -86,33 +86,41 @@
     height: 42px;
     border: none;
     padding: 0;
-    margin-top: 205px;
+    margin-top: 214px;
     cursor: pointer;
     background-color: transparent;
   }
 
-  .reviews__toggle path {
+  .reviews__prev-svg {
     fill: fade(@main-color, 30%);
+
+    &:hover,
+    &:focus {
+      fill: fade(@main-color, 60%);
+    }
+
+    &:active {
+      fill: fade(@main-color, 10%);
+    }
   }
 
-  .reviews__toggle path:hover,
-  .reviews__toggle path:focus {
-    fill: fade(@main-color, 60%);
+  .reviews__next-svg {
+    fill: fade(@main-color, 30%);
+
+    &:hover,
+    &:focus {
+      fill: fade(@main-color, 60%);
+    }
+
+    &:active {
+      fill: fade(@main-color, 10%);
+    }
   }
 
-  .reviews__toggle path:active {
-    fill: fade(@main-color, 10%);
-  }
-
-  .reviews__decorate {
-    position: absolute;
-    width: 79px;
-    height: 64px;
-    background-image: url("../../img/icon-quotes.svg");
-    top: 65px;
-    left: 50%;
-    margin-left: -40px;
-    opacity: 0.1;
+  .reviews {
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: left 50% top 75px;
   }
 
   .reviews__text {

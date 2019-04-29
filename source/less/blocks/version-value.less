@@ -49,9 +49,17 @@
   border-color: @extra-color;
 }
 
-
 .version-value__input:checked + .version-value__label::after {
   display: block;
+}
+
+.version-value__input:disabled + .version-value__label::before,
+.version-value__input:disabled + .version-value__label::after {
+  display: none;
+}
+
+.version-value__input:disabled + .version-value__label {
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
