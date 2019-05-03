@@ -5,12 +5,15 @@
   display: none;
 }
 
-.config__scale {
+.config::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
   width: 240px;
   height: 2px;
   background-color: @main-color;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .config__button {
@@ -48,6 +51,10 @@
     bottom: 0;
   }
 
+  .config::before {
+    width: 202px;
+  }
+
   .config__button--crop {
     right: 41px;
   }
@@ -66,7 +73,7 @@
     width: 289px;
   }
 
-  .config__scale {
+  .config::before {
     width: 289px;
   }
 
