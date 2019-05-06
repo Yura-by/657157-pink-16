@@ -1,15 +1,15 @@
 .platform-list {
   .ul-default();
   display: flex;
-  width: 210px;
+  width: 75%;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 .platform-list__type {
   display: block;
-  width: 47px;
-  height: 57px;
+  width: 100%;
+  height: auto;
 }
 
 .platform-list__type--android {
@@ -18,4 +18,25 @@
 
 .platform-list__type--microsoft {
   padding-top: 10px;
+}
+
+.platform-list__item {
+  width: 22%;
+}
+
+.platform__image {
+  width: 100%;
+  height: auto;
+  max-width: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .platform-list__item {
+    width: 46px;
+    height: 47px;
+  }
+
+  .platform-list {
+    width: 70%;
+  }
 }

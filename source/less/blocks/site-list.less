@@ -19,6 +19,8 @@
   padding-bottom: 13px;
   text-align: center;
   border-bottom: 2px solid transparent;
+  font-size: 5.5vw;
+  line-height: 10vw;
 
   color: @paper-color;
 
@@ -29,6 +31,20 @@
 
   &:active {
     color: fade(@paper-color, 30%);
+  }
+}
+
+@media (min-width: 450px) {
+  .site-list__link {
+    font-size: 24px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__link {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -59,6 +75,10 @@
     line-height: 18px;
     text-transform: none;
     background-color: transparent;
+  }
+
+  .site-list__link {
+    line-height: 18px;
   }
 
   .site-list__item {
