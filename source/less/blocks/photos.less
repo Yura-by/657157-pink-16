@@ -5,18 +5,29 @@
 
 .photos__lid {
   display: block;
-  width: 250px;
+  width: 78%;
+  max-width: 390px;
   margin: 0 auto;
   text-align: center;
-  line-height: 30px;
+  line-height: 9.4vw;
   font-weight: normal;
   padding-top: 45px;
   padding-bottom: 49px;
+  font-size: 4.4vw;
+}
+
+@media (min-width: 500px) {
+  .photos__lid {
+    font-size: 22px;
+    line-height: 47px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photos__lid {
     font-size: 18px;
+    line-height: 30px;
+    max-width: none;
     width: 470px;
     padding-top: 93px;
     padding-bottom: 75px;
