@@ -1,9 +1,19 @@
 .copyright {
   .h-default();
   display: flex;
-  width: 130px;
+  width: 46%;
+  max-width: 200px;
   justify-content: space-between;
   align-items: center;
+  font-size: 4.4vw;
+  line-height: 5.6vw;
+}
+
+@media (min-width: 420px) {
+  .copyright {
+    font-size: 19px;
+    line-height: 24px;
+  }
 }
 
 .copyright__text {
@@ -13,11 +23,17 @@
 .copyright__svg {
   fill: @extra-color;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .copyright__link:hover .copyright__svg,
 .copyright__link:focus .copyright__svg {
   fill: @main-color;
+}
+
+.copyright__link {
+  width: 22%;
 }
 
 .copyright__link:active .copyright__svg {
@@ -35,7 +51,10 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
+    width: 130px;
     margin-left: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -47,5 +66,10 @@
 
   .copyright__text {
     font-size: 18px;
+    line-height: 30px;
+  }
+
+  .copyright__svg {
+    width: auto;
   }
 }

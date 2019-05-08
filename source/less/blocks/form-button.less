@@ -2,13 +2,13 @@
   display: block;
   margin: 0 auto;
   box-sizing: border-box;
-  width: 280px;
+  width: 87.5%;
   color: @paper-color;
   background-color: rgba(42, 171, 109, 1);
   border: none;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 5.6vw;
+  line-height: 9.4vw;
   text-transform: uppercase;
   padding-top: 16px;
   padding-right: 5px;
@@ -24,5 +24,19 @@
   &:active {
     color: fade(@paper-color, 30%);
     background-color: rgba(28, 155, 94, 1);
+  }
+}
+
+@media (min-width: 450px) {
+  .form-button {
+    font-size: 25px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-button {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

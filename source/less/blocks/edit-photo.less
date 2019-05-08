@@ -1,12 +1,21 @@
 .edit-photo__lid {
-  line-height: 30px;
+  line-height: 9.4vw;
   font-weight: normal;
   display: block;
-  width: 280px;
+  width: 78.5%;
   margin: 0 auto;
   text-align: center;
   padding-top: 19px;
   padding-bottom: 42px;
+  font-size: 4.4vw;
+  max-width: 355px;
+}
+
+@media (min-width: 450px) {
+  .edit-photo__lid  {
+    font-size: 20px;
+    line-height: 42px;
+  }
 }
 
 .edit-photo__wrapper {
@@ -29,7 +38,7 @@
 .edit-photo__box {
   position: relative;
   padding-bottom: 73px;
-  width: 240px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -41,9 +50,11 @@
 @media (min-width: @tablet-width) {
   .edit-photo__lid {
     font-size: 18px;
+    line-height: 30px;
     width: 620px;
     padding-top: 45px;
     padding-bottom: 68px;
+    max-width: none;
   }
 
   .edit-photo__wrapper {

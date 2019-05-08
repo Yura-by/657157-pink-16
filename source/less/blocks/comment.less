@@ -3,7 +3,7 @@
   line-height: 18px;
   color: @extra-color;
   text-transform: uppercase;
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 }
 
@@ -14,9 +14,10 @@
   color: @main-color;
   box-sizing: border-box;
   padding-top: 14px;
+  padding-right: 10px;
   padding-left: 18px;
   border: 2px solid @trans-dark-color;
-  width: 280px;
+  width: 100%;
   min-height: 200px;
 
   &:hover,
@@ -33,6 +34,15 @@
   display: block;
   text-align: center;
   margin-bottom: 16px;
+  font-size: 4.4vw;
+  line-height: 5.6vw;
+}
+
+@media (min-width: 450px) {
+  .comment__legend {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -43,9 +53,11 @@
   }
 
   .comment__legend {
+    font-size: 14px;
+    line-height: 30px;
     padding-right: 38px;
     padding-left: 38px;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 
   .comment__textarea {

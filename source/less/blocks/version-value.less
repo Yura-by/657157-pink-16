@@ -6,8 +6,8 @@
 .version-value__label {
   display: block;
   position: relative;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 5.6vw;
+  line-height: 9.4vw;
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
@@ -19,8 +19,8 @@
     left: 0;
     top: 0;
     box-sizing: border-box;
-    width: 39px;
-    height: 39px;
+    width: 12vw;
+    height: 12vw;
     border: 2px solid @trans-dark-color;
     border-radius: 50%;
     background-color: @paper-color;
@@ -30,13 +30,32 @@
     display: none;
     content: "";
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 3.8vw;
+    top: 3.8vw;
     box-sizing: border-box;
-    width: 15px;
-    height: 15px;
+    width: 4.7vw;
+    height: 4.7vw;
     border-radius: 50%;
     background-color: @extra-color;
+  }
+}
+
+@media (min-width: 450px) {
+  .version-value__label {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .version-value__label::before {
+    width: 54px;
+    height: 54px;
+  }
+
+  .version-value__label::after {
+    width: 21px;
+    height: 21px;
+    left: 17px;
+    top: 17px;
   }
 }
 
@@ -64,8 +83,22 @@
 
 @media (min-width: @tablet-width) {
   .version-value__label {
+    font-size: 18px;
+    line-height: 30px;
     margin-left: 60px;
     padding-left: 59px;
+  }
+
+  .version-value__label::before {
+    width: 39px;
+    height: 39px;
+  }
+
+  .version-value__label::after {
+    width: 15px;
+    height: 15px;
+    left: 12px;
+    top: 12px;
   }
 }
 

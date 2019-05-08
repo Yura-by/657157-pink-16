@@ -4,8 +4,8 @@
 }
 
 .progress-value__label {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 5.6vw;
+  line-height: 9.4vw;
   display: block;
   padding-top: 4px;
   padding-right: 5px;
@@ -19,8 +19,8 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    width: 39px;
-    height: 39px;
+    width: 12vw;
+    height: 12vw;
     border: 2px solid @trans-dark-color;
   }
 }
@@ -44,13 +44,41 @@
   display: none;
 }
 
+.progress-value__label::before {
+  background-size: 7vw auto;
+}
+
+@media (min-width: 450px) {
+  .progress-value__label {
+   font-size: 25px;
+   line-height: 42px;
+  }
+
+  .progress-value__label::before {
+    width: 54px;
+    height: 54px;
+  }
+
+  .progress-value__label::before {
+    background-size: 31.5px auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .progress-value {
     margin-left: 59px;
   }
 
   .progress-value__label {
+    font-size: 18px;
+    line-height: 30px;
     padding-left: 60px;
+  }
+
+  .progress-value__label::before {
+    width: 39px;
+    height: 39px;
+    background-size: auto;
   }
 }
 

@@ -3,10 +3,14 @@
 }
 
 .send__link {
+  width: 87.5%;
+  max-width: 337px;
+  font-size: 5.6vw;
+  line-height: 5.6vw;
   color: @extra-color;
   border-color: @extra-color;
   margin: 0 auto;
-  margin-bottom: 13px;
+  margin-bottom: 4vw;
   background-color: transparent;
 
   &:hover,
@@ -21,6 +25,10 @@
 }
 
 .send__cancel {
+  width: 87.5%;
+  font-size: 5.6vw;
+  line-height: 5.6vw;
+  max-width: 337px;
   color: fade(@main-color, 10%);
   border-color: fade(@main-color, 10%);
   margin: 0 auto;
@@ -38,14 +46,31 @@
   }
 }
 
+@media (min-width: 385px) {
+  .send__link {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .send__cancel {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .send__link {
+    font-size: 18px;
+    line-height: 18px;
     width: 260px;
     margin: 0;
     margin-bottom: 24px;
   }
 
   .send__cancel {
+    font-size: 18px;
+    line-height: 18px;
     width: 260px;
     margin: 0;
   }

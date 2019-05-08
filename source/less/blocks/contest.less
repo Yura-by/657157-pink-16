@@ -1,11 +1,20 @@
 .contest__description {
   .h-default();
-  line-height: 30px;
-  width: 280px;
+  font-size: 4.4vw;
+  line-height: 9.4vw;
+  width: 87.5%;
+  max-width: 390px;
   margin: 0 auto;
   text-align: center;
   padding-top: 46px;
   padding-bottom: 34px;
+}
+
+@media (min-width: 500px) {
+  .contest__description {
+    font-size: 22px;
+    line-height: 47px;
+  }
 }
 
 .contest__sentence {
@@ -23,7 +32,9 @@
 
   .contest__description {
     font-size: 18px;
+    line-height: 30px;
     width: 520px;
+    max-width: none;
     padding-top: 93px;
     padding-bottom: 70px;
   }
@@ -32,6 +43,8 @@
 @media (min-width: @desktop-width) {
   .contest__description {
     width: 800px;
+    max-width: none;
+    padding-bottom: 64px;
   }
 
   .contest {

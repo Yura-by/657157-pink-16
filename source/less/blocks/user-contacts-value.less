@@ -5,23 +5,31 @@
 
 .user-contacts-value__label {
   display: block;
-  line-height: 30px;
+  font-size: 4.4vw;
+  line-height: 9.4vw;
   color: @extra-color;
   text-transform: uppercase;
   padding-left: 22px;
   margin-bottom: 4px;
 }
 
+@media (min-width: 450px) {
+  .user-contacts-value__label {
+   font-size: 20px;
+   line-height: 42px;
+  }
+}
+
 .user-contacts-value__input {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 5.6vw;
+  line-height: 9.4vw;
   border: 2px solid @trans-dark-color;
   padding-top: 16px;
   padding-right: 5px;
   padding-bottom: 14px;
   padding-left: 21px;
   box-sizing: border-box;
-  width: 280px;
+  width: 100%;
 
   &:hover,
   &:focus {
@@ -30,6 +38,13 @@
 
   &:active {
     border-color: @extra-color;
+  }
+}
+
+@media (min-width: 380px) {
+  .user-contacts-value__input{
+    font-size: 21px;
+    line-height: 36px;
   }
 }
 
@@ -78,12 +93,16 @@
     order: 1;
     margin-bottom: 0;
     padding-left: 19px;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   .user-contacts-value__input {
     width: 500px;
     margin-bottom: 10px;
     padding-right: 60px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
