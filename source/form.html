@@ -61,11 +61,11 @@
             <div class="name__inner">
               <p class="name__item name-value">
                 <label class="name-value__label" for="surname">Фамилия:</label>
-                <input class="name-value__input" name="surname" id="surname" type="text" placeholder="Укажите фамилию *" required>
+                <input class="name-value__input name-value__input--surname" name="surname" id="surname" type="text" placeholder="Укажите фамилию *">
               </p>
               <p class="name__item name-value">
                 <label class="name-value__label" for="personal-name">Имя:</label>
-                <input class="name-value__input" name="personal-name" id="personal-name" type="text" placeholder="Введите ваше имя *" required>
+                <input class="name-value__input name-value__input--name" name="personal-name" id="personal-name" type="text" placeholder="Введите ваше имя *">
               </p>
               <p class="name__item name-value name-value--last">
                 <label class="name-value__label" for="patronymic">Отчество:</label>
@@ -120,7 +120,7 @@
                 </p>
                 <p class="user-contacts__item user-contacts-value user-contacts-value--adress">
                   <label class="user-contacts-value__label" for="user-mail">Адрес почты</label>
-                  <input class="user-contacts-value__input" name="user-mail" id="user-mail" type="email" placeholder="Введите почту *" required>
+                  <input class="user-contacts-value__input user-contacts-value__input--email" name="user-mail" id="user-mail" type="email" placeholder="Введите почту *">
                 </p>
               </div>
             </fieldset>
@@ -213,9 +213,7 @@
     </footer>
 
     <script src="js/toggle.menu.js"></script>
-
-    <script>
-    </script>
+    <script src="js/popup.js"></script>
 
   </body>
 </html>

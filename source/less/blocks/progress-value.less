@@ -22,6 +22,7 @@
     width: 12vw;
     height: 12vw;
     border: 2px solid @trans-dark-color;
+    background-size: 7vw auto;
   }
 }
 
@@ -44,22 +45,15 @@
   display: none;
 }
 
-.progress-value__label::before {
-  background-size: 7vw auto;
-}
-
 @media (min-width: 450px) {
   .progress-value__label {
-   font-size: 25px;
-   line-height: 42px;
+    font-size: 25px;
+    line-height: 42px;
   }
 
   .progress-value__label::before {
     width: 54px;
     height: 54px;
-  }
-
-  .progress-value__label::before {
     background-size: 31.5px auto;
   }
 }
